@@ -1,0 +1,31 @@
+:root {
+    --text-color: #000;
+    --selection-bg-color: #FEC903;
+    --scrollbar-track-bg: rgb(235, 202, 245);
+    --scrollbar-thumb-bg: #420177;
+    --body-bg-color: #f7f7f7;
+    --nav-bg-color: #fff;
+    --link-color: #0e2431;
+    --link-active-color: #011aff;
+    --link-border-color: #011aff;
+    --logo-hover-color: #fc8c05;
+    --hamburger-color: rgb(24, 2, 63);
+    --heading-color: #002057;
+    --span-color: #ff7b00;
+    --typing-color: rgb(148, 8, 8);
+    --button-bg: #2506ad;
+    --icon-color: #00d9ff;
+    --icon-bg-color: #09011b;
+    --bg-about: rgb(25, 255, 255);
+    --h3-color:rgb(27, 27, 27);
+    --heading-color: rgb(32, 32, 32);
+    --heading-span: rgb(115, 3, 167);
+    --bg-skills: linear-gradient(to bottom, #57059e, #4a00e0);
+    --bg-skills-container: rgba(0, 0, 22, 0.4);
+    --education-bg: #e5ecfb;
+    --work-bg:linear-gradient(to bottom, #000031, #00002c);
+    --project-name:#ffd900;
+    --project-link: rgb(12, 12, 12);
+    --contact-bg: #e5ecfb;
+    --footer-bg: rgb(0, 1, 43);
+}

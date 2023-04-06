@@ -1,0 +1,55 @@
+@import '../../styles/variables.css';
+
+.skills {
+   min-height: 90vh;
+   background: var(--bg-skills);
+}
+.skills h2{
+    color: #fff;
+}
+.skills .heading span{
+    color: rgb(255, 230, 0);
+}
+.skills .heading .fa{
+    position: relative;
+    top: 0.3rem;
+}
+.skills .container {
+    background: var(--bg-skills-container);
+    color: #fff;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+}
+.skills .container .row{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    flex-wrap: wrap;
+    gap: 1.8rem;
+}
+
+@media screen and (max-width:1200px) {
+    .skills .container .row {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+    }
+}
+@media screen and (max-width:740px) {
+    .skills .container .row {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.2rem;
+        padding: 7px;
+    }
+    
+}
+@media screen and (max-width:645px) {
+
+    .skills .container .row {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.2rem;
+        padding: 7px;
+    }
+   
+}

@@ -1,0 +1,117 @@
+@import '../../styles/variables.css';
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.7rem 10%;
+    
+    height: 6.5rem;
+    background-color: var(--nav-bg-color);
+    border: 1px solid black;
+    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
+}
+
+header .logo {
+    font-size: 1.9rem;
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--link-color);
+    cursor: pointer;
+}
+header .logo:hover {
+    color: var(--logo-hover-color);
+}
+header .navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .navbar ul li{
+    margin-left: 2.5rem;
+    cursor: pointer;
+    font-size: 1.57rem;
+    color: var(--link-color);
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.04;
+    transition: 0.2s;
+}
+
+header .navbar ul li:active,
+header .navbar ul li:hover{
+    color: var(--link-active-color);
+    border-bottom: 0.2rem solid var(--link-border-color);
+    padding: 0.5rem 0;
+}
+/* hamburger */
+.menu {
+    font-size: 3rem;
+    cursor: pointer;
+    color: var(--hamburger-color);
+    display: none;
+    transition: 0.1s ease-in-out;
+    outline: none;
+    border: none;
+}
+
+/* resposive */
+@media screen and (max-width: 768px){
+    .menu{
+        display: block;
+    }
+
+    .navbar{
+        position: fixed;
+        top: 6.5rem;
+        width: 75%;
+        height: 100%;
+        text-align: left;
+        background-color: #0e0f31;
+        transition: 0.3s ease-in-out;
+    }
+    .navbar ul{
+        flex-flow: column;
+        padding: 1rem;
+    }
+    .navbar ul li{
+        text-align: center;
+        width: 100%;
+        margin: 1rem 0;
+        border-radius: 0.5rem;
+        width: 26rem;
+        display: block;
+        padding: 1rem;
+        text-align: left;
+        color: #fff !important;
+        font-size: 2rem !important;
+    }
+
+    .navbar ul li:active,
+    .navbar ul li:hover
+    {
+       padding: 1rem;
+       color: #fff;
+       border-radius: 0.5rem;
+       border-bottom: 0.5rem solid #011aff;
+    }
+    .rotate{
+        transform: rotate(180deg);
+    }
+    .nav-expanded{
+        right: 0 !important;
+    }
+    .nav-hide{
+        right: -100%;
+    }
+    .navbar button{
+        transition: 0.2s ease-in;
+    }
+    
+}

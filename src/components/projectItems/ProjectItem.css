@@ -1,0 +1,82 @@
+@import '../../styles/variables.css';
+
+.project-box{
+    flex: 1 1 30rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    height: 30rem;
+    
+}
+.project-box img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 0.5rem;
+    transition: .5s ease;
+
+}
+.project-box .project-content {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 85%;
+    left: 0;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease;
+}
+.project-box .project-content .tag{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.5rem;
+    width: 100%;
+    padding-left: 1rem;
+    background: var(--project-name);
+
+}
+.project-box .project-content .tag h3{
+    font-size: 2rem;
+}
+.project-box:hover .project-content {
+    top: 25%;
+    cursor: pointer;
+
+}
+.project-box:hover img{
+   transform: scale(1.1);
+}
+.project-box .project-content .desc {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-box .project-content .desc p{
+    font-size: 1.5rem;
+}
+
+.project-box .project-content .desc .btns{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.project-box .project-content .desc .btns .work-btn{
+    line-height: 0;
+    display: inline;
+    padding: 1.5rem 2.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: var(--project-link);
+}
+.project-box .project-content .desc .btns .work-btn:hover{
+    background: #310ae0f5;
+}

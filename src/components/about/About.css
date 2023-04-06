@@ -1,0 +1,87 @@
+@import '../../styles/variables.css';
+
+.about {
+    background: var(--bg-about);
+}
+.about .row {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 4rem;
+}
+.about .row .image {
+    text-align: center;
+    flex: 1 1 35rem;
+}
+.about .row .image img{
+    margin: 4rem;
+    width: 30rem;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+    mix-blend-mode: normal;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.about .row .image img:hover{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.content{
+    flex: 1 1 45rem;
+    padding: 3rem;
+}
+.content h3{
+    color: var(--h3-color);
+    font-size: 2.5rem;
+}
+.content .tag {
+    font-size: 1.4rem;
+    color: #020133;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+.about .row .content p{
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    font-family: "Nunito";
+    font-weight: 600;
+    text-decoration: none;
+}
+.resume-btn{
+    margin-top: 6rem;
+}
+.res-btn {
+    
+    padding: 1.7rem 3rem;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+    color: #fff;
+    background: #2506ad;
+    box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+    font-family: "Nunito", sans-serif;
+
+}
+.res-btn span {
+    margin-left: 0.3rem;
+    font-size: 1.3rem;
+    transition: 0.3s;
+    
+}
+.res-btn .fa{
+    transition: 0.3s;
+    position: relative;
+    top: 0.3rem;
+   
+}
+.res-btn:hover {
+    background: #1a047e;
+}
+.res-btn:hover .fa{
+    transform: translateX(5px);
+}
+
+/* @media screen and (max-width: 600px) {
+    
+} */
