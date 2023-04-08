@@ -2,6 +2,8 @@ import React from 'react'
 import './Footer.css'
 import { FaChevronCircleRight, FaEnvelope, FaGithub, FaHeart, FaInstagram, FaLinkedin, FaMapMarkedAlt, FaPhone, FaTelegram, FaWhatsapp } from 'react-icons/fa'
 
+import {Link} from 'react-scroll';
+
 function Footer() {
   return (
     <section className='footer'>
@@ -12,14 +14,35 @@ function Footer() {
             <h3>Santosh' Portfolio</h3>
             <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/></p>
         </div>
-        <div className="box">
+
+        <div className="box quick-links">
           <h3>quick links</h3>
-          <a href=""><FaChevronCircleRight className='fa'/> home</a>
-          <a href=""><FaChevronCircleRight className='fa'/> about</a>
-          <a href=""><FaChevronCircleRight className='fa'/> skills</a>
-          <a href=""><FaChevronCircleRight className='fa'/> education</a>
-          <a href=""><FaChevronCircleRight className='fa'/> work</a>
+          <Link to='Home' smooth={true} duration={50}>
+            <li href=""><FaChevronCircleRight className='fa'/> home</li>
+          </Link>
+
+          <Link to='About' smooth={true} duration={50}>
+            <li href=""><FaChevronCircleRight className='fa'/> about</li>
+          </Link>
+
+          <Link to='Skills' smooth={true} duration={50}>
+            <li href=""><FaChevronCircleRight className='fa'/> skills</li>
+          </Link>
+
+          <Link to='Education' smooth={true} duration={50}>
+            <li href=""><FaChevronCircleRight className='fa'/> education</li>
+          </Link>
+
+          <Link to='Work' smooth={true} duration={50}>
+            <li href=""><FaChevronCircleRight className='fa'/> work</li>
+          </Link>
+
+          
+          
+          
+          
         </div>
+
         <div className="box">
           <h3>Contact info</h3>
           <p> <FaPhone className='fa'/> +91 7052275659 </p>

@@ -48,14 +48,37 @@
 .home .content p span{
     color: var(--typing-color);
 }
-.home .hero-btn {
-    margin-top: 1rem;
-    position: absolute;
-    line-height: 0;
+.home .content .hero-btn {
+    margin: 1rem 0;
+    position: relative;
+
+}
+.home .content .hero-btn span{
+    font-weight: 600;
+    font-size: 1.7rem;
+    font-family: "Nunito", sans-serif;
+}
+.home .content .hero-btn .fa{
+    position: relative;
+    top: .7rem;
+    font-size: 2.3rem;
+    transition: 0.3s;
+}
+
+.home .hero-btn:hover {
+    background: #1a047e;
+    color: #fff;
+    border: none;
+    outline: none;
+   
+}
+.home .hero-btn:hover .fa{
+   transform: translateX(5px);
+   
 }
 .socials{
     position: relative;
-    margin-top: 9rem;
+    margin-top: 7rem;
 }
 .socials .social-icons li{
     display: inline-block;
@@ -122,20 +145,29 @@
 .typing-text{
     margin-right: 10px;   
 }
-.typed-cursor {
-    position: relative;
-    font-size: 3.3rem;
-    color: #e90606 !important;
-}
+
 
 .typing {
     height: 100px;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     /* border: 1px solid black; */
 }
 
-@media screen and (max-width: 400px) {
+@media (min-width: 425px) and (max-width: 995px){
+    .home{
+        margin-top: 4rem;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 425px){
+    .home .content {
+        padding-top: 5rem !important;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
     .home{
         margin-top: 5rem;
     }
@@ -146,7 +178,7 @@
         width: 65%;
     }
     .home .images {
-       display: none;
+       /* display: none; */
     }
     .icon{
         width: 40px;
@@ -166,3 +198,7 @@
   
     
 }
+
+
+
+

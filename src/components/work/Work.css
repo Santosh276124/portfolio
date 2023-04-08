@@ -17,7 +17,8 @@
 }
 
  .work .work-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     flex-wrap: wrap;   
     gap: 1.5rem;
     margin: 2rem;
@@ -52,4 +53,11 @@
     background: #fff;
     color: black;
     transform: translateX(5px);
+}
+
+
+@media screen and (max-width: 900px) {
+    .work .work-container {
+        grid-template-columns: repeat(1, 1fr);
+    } 
 }

@@ -82,6 +82,9 @@
     transform: translateX(5px);
 }
 
-/* @media screen and (max-width: 600px) {
-    
-} */
+@media screen and (max-width: 425px) {
+    .about .row .image img{
+        width: 70%;
+        margin: 0;
+    }
+}

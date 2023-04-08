@@ -20,11 +20,18 @@ header {
 header .logo {
     font-size: 1.9rem;
     font-weight: 800;
+    letter-spacing: .08rem;
     text-decoration: none;
     color: var(--link-color);
     cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
 }
-header .logo:hover {
+header .logo span {
+    color: var(--heading-span);
+}
+header .logo:hover span{
+    
+    text-transform: none;
     color: var(--logo-hover-color);
 }
 header .navbar ul {

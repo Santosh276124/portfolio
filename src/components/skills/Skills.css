@@ -36,6 +36,7 @@
         gap: 1.5rem;
     }
 }
+
 @media screen and (max-width:740px) {
     .skills .container .row {
         grid-template-columns: repeat(3, 1fr);
@@ -44,10 +45,11 @@
     }
     
 }
-@media screen and (max-width:645px) {
+
+@media screen and (max-width:400px) {
 
     .skills .container .row {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 1.2rem;
         padding: 7px;
     }

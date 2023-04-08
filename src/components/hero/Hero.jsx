@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import "./Hero.css";
 import { FaGithub, FaInstagram, FaLinkedin, FaTelegram, FaWhatsapp } from "react-icons/fa";
+import { AiOutlineCloudDownload } from "react-icons/ai";
+
 import hero from "../../assets/image/hero.png";
 
 import Typed from "typed.js";
@@ -20,7 +22,7 @@ function Hero() {
       backDelay: 500,
       loop: true,
       showCursor: true,
-      cursorChar: "!",
+      cursorChar: "|",
       autoInsertCss: true,
     });
 
@@ -39,13 +41,15 @@ function Hero() {
           Hi There, <br /> I'm Santosh
           <span> Chauhan</span>
         </h2>
+
         <div className="typing">
 
         <p>
           i am into <span className="typing-text" ref={el} ></span>
         </p>
         </div>
-        <button className="btn hero-btn">About</button>
+
+        <a className="btn hero-btn"><span>Resume</span> <AiOutlineCloudDownload className="fa"/> </a>
 
         <div className="socials">
           <ul
